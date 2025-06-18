@@ -1,7 +1,7 @@
-streamlit==1.23.0
-requests==2.31.0
-folium==0.16.0
-streamlit-folium==0.13.0
-numpy==1.26.4
-scikit-learn==1.4.1.post1  
-pandas==2.2.2
+streamlit
+requests
+folium
+streamlit-folium
+numpy
+scikit-learn 
+pandas
