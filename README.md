@@ -34,7 +34,7 @@ Traffic congestion in metropolitan areas leads to longer travel times, higher fu
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** `Trafficdatasetwith_levels.csv`
 - **Total Records:** 1001
@@ -119,7 +119,7 @@ OPENWEATHER_API_KEY=your_openweather_api_key
 
 ---
 
-## ⚖️ Ethical Considerations & Limitations
+## Ethical Considerations & Limitations
 
 - Dataset contains no personally identifiable information; real-time GPS/user data would require GDPR-level compliance.
 - Model fairness must be validated across diverse regions and traffic patterns before deployment.
