@@ -10,6 +10,7 @@ A machine learning system that predicts traffic congestion levels (**High**, **M
 
 Traffic congestion in metropolitan areas leads to longer travel times, higher fuel consumption, and increased pollution. This project builds a reliable traffic level prediction system using classical machine learning models, trained on a dataset combining road, weather, and distance-based features and integrates live data from real-world APIs.
 
+
 ---
 
 ## Tech Stack
