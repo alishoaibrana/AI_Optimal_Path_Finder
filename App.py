@@ -33,7 +33,8 @@ def get_api_key(key_name):
 # API Keys
 TOMTOM_API_KEY = get_api_key("TOMTOM_API_KEY")
 OPENWEATHER_API_KEY = get_api_key("OPENWEATHER_API_KEY")
-
+st.write("Key loaded:", TOMTOM_API_KEY[:5] + "..." if TOMTOM_API_KEY else "❌ NOT LOADED")
+st.write("Key loaded:", OPENWEATHER_API_KEY[:5] + "..." if TOMTOM_API_KEY else "❌ NOT LOADED")
 
 # Sidebar
 st.sidebar.title("📂 Navigation")
@@ -58,6 +59,7 @@ with col_dropoff:
 def get_coordinates(location):
     url = f"https://api.tomtom.com/search/2/geocode/{location}.json?key={TOMTOM_API_KEY}"
     res = requests.get(url).json()
+    st.write("DEBUG API RESPONSE:", res)
     try:
         lat = res['results'][0]['position']['lat']
         lon = res['results'][0]['position']['lon']
