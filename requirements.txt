@@ -1,16 +1,16 @@
-streamlit==1.59.1
+streamlit
 streamlit-folium
-folium==0.20.0
+folium
 
-scikit-learn==1.6.1
-numpy==1.26.4
-scipy==1.13.1
-pandas==2.2.2
+scikit-learn
+numpy
+scipy
+pandas
 
-joblib==1.5.3
-requests==2.34.2
-python-dotenv==1.0.1
+joblib
+requests
+python-dotenv
 
-pydeck==0.9.3
-altair==6.2.2
-pillow==12.3.0
+pydeck
+altair
+pillow

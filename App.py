@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
 import requests
 import folium
@@ -17,9 +19,21 @@ le_road = model_data['le_road']
 le_traffic = model_data['le_traffic']
 feature_names = model_data['feature_names']
 
+load_dotenv()
+
+def get_api_key(key_name):
+    # pehle .env se try karo, nahi mile to streamlit secrets se
+    value = os.getenv(key_name)
+    if value is None:
+        try:
+            value = st.secrets[key_name]
+        except Exception:
+            value = None
+    return value
 # API Keys
-TOMTOM_API_KEY = 'vIQFHwtFspqrlUltQRMkXRZx34MGGHFY'
-OPENWEATHER_API_KEY = 'c41ad81235ca0a45594610502b05b89f'
+TOMTOM_API_KEY = get_api_key("TOMTOM_API_KEY")
+OPENWEATHER_API_KEY = get_api_key("OPENWEATHER_API_KEY")
+
 
 # Sidebar
 st.sidebar.title("📂 Navigation")
