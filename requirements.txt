@@ -1,5 +1,5 @@
 streamlit==1.59.1
-streamlit-folium==0.27.2
+streamlit-folium
 folium==0.20.0
 
 scikit-learn==1.6.1
