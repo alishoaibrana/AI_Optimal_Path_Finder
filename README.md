@@ -2,7 +2,6 @@
 
 A machine learning system that predicts traffic congestion levels (**High**, **Moderate**, **Low**) using real-world traffic and weather-related features. The project includes a full ML pipeline data preprocessing, model training, evaluation, explainability (SHAP & LIME), and a Streamlit web app for real-time predictions.
 
-> Built for **Machine Learning ** coursework.
 
 ---
 
@@ -73,7 +72,7 @@ Traffic congestion in metropolitan areas leads to longer travel times, higher fu
 
 ---
 
-## 🔍 Explainability
+## Explainability
 
 To make the "black-box" Random Forest model interpretable:
 - **SHAP (TreeExplainer)**: used for global & local feature importance (summary plots, waterfall plots). Found that `Vehicle_Count` is the strongest driver of traffic level, with `Weather_Condition` (Rain/Fog) adding to congestion.
@@ -124,27 +123,20 @@ OPENWEATHER_API_KEY=your_openweather_api_key
 
 - Dataset contains no personally identifiable information; real-time GPS/user data would require GDPR-level compliance.
 - Model fairness must be validated across diverse regions and traffic patterns before deployment.
-- Not yet integrated with live accident/roadblock feeds — predictions may not capture sudden anomalies.
+- Not yet integrated with live accident/roadblock feeds predictions may not capture sudden anomalies.
 
 ---
-
-## Future Work
-
-- Time-series forecasting using LSTM / GRU / TCN for temporal traffic patterns
-- Enhanced Streamlit dashboard with user roles & interactive analytics
-- Real-time SHAP/LIME explanations integrated into the live app
-- Edge deployment for low-latency, on-device predictions
 
 ---
 
 ## Team
 
-| Name | Roll Number |
+| Name 
 |---|---|
-| Abdur Rehman (Team Lead) | AI-22014 |
-| Talha Noor | AI-22041 |
-| Ali Rana | AI-22044 |
-| Sufiyan Nadeem | AI-22047 |
+| Abdur Rehman 
+| Talha Noor 
+| Ali Rana 
+| Sufiyan Nadeem 
 
 
 ---
